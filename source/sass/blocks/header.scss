@@ -1,0 +1,36 @@
+.header__nav {
+  min-height: 99px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toggle {
+  display: none;
+}
+
+.header__preview {
+  min-height: 860px;
+  max-width: 1920px;
+  padding-top: 185px;
+  color: $color-white;
+  background-image: url("../../img/desktop-header-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+}
+
+.header__button {
+  display: block;
+  width: 340px;
+  min-height: 75px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-orange;
+}
