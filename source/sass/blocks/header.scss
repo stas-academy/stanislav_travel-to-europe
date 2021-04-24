@@ -17,19 +17,21 @@
     min-height: 344px;
     padding-top: 60px;
   }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tablet-header-photo@2x.jpg");
-    }
 
-    @media (max-width: $mobile-width-max) {
-      background-image: url("../../img/mobile-header-photo.jpg");
-      min-height: 0;
-      height: 235px;
-      padding-top: 81px;
-    }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/mobile-header-photo@2x.jpg");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/tablet-header-photo@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-image: url("../../img/mobile-header-photo.jpg");
+    min-height: 0;
+    height: 235px;
+    padding-top: 81px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/mobile-header-photo@2x.jpg");
+  }
 }
 
 .header__wrapper {

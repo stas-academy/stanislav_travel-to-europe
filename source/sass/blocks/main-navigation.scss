@@ -12,7 +12,6 @@
 }
 
 .main-navigation__logo {
-
   @media (max-width: $tablet-width-max) {
     display: block;
     margin-top: 9px;
@@ -25,9 +24,15 @@
 }
 
 .main-navigation--opened .main-navigation__logo {
-
   @media (max-width: $tablet-width-max) {
     display: none;
+  }
+}
+
+.main-navigation__image {
+  @media (max-width: $tablet-width-max) {
+    width: 44px;
+    height: 17px;
   }
 }
 
@@ -52,7 +57,6 @@
 }
 
 .main-navigation--opened .main-navigation__menu {
-
   @media (max-width: $tablet-width-max) {
     display: flex;
     justify-content: flex-start;
@@ -72,7 +76,7 @@
     color: $color-grey-dark;
     display: flex;
     align-items: center;
-    margin-left: 0;
+    // margin-left: 0;
     min-height: 60px;
     background-color: $color-whine-dark;
     margin: 0 -15px;
@@ -83,7 +87,6 @@
 }
 
 .main-navigation__link::before {
-
   @media (max-width: $tablet-width-max) {
     content: "";
     background-image: url("../../img/icon-arrow-toggle.svg");
@@ -96,7 +99,6 @@
 }
 
 .main-navigation__item {
-
   @media (max-width: $tablet-width-max) {
     margin-top: 30px;
   }
@@ -134,7 +136,6 @@
 }
 
 .main-navigation--closed .main-navigation__toggle::before {
-
   @media (max-width: $tablet-width-max) {
     content: "";
     position: absolute;
@@ -152,14 +153,12 @@
 }
 
 .main-navigation--nojs .main-navigation__toggle {
-
   @media (max-width: $tablet-width-max) {
     display: none;
   }
 }
 
 .main-navigation--nojs .main-navigation__item {
-
   @media (max-width: $tablet-width-max) {
     display: block;
   }
@@ -167,7 +166,6 @@
 
 .main-navigation--opened .main-navigation__toggle::before,
 .main-navigation--opened .main-navigation__toggle::after {
-
   @media (max-width: $tablet-width-max) {
     content: "";
     position: absolute;
@@ -180,21 +178,18 @@
 }
 
 .main-navigation--opened .main-navigation__toggle::before {
-
   @media (max-width: $tablet-width-max) {
     transform: rotate(45deg);
   }
 }
 
 .main-navigation--opened .main-navigation__toggle::after {
-
   @media (max-width: $tablet-width-max) {
     transform: rotate(-45deg);
   }
 }
 
 .main-navigation--opened .main-navigation__toggle {
-
   @media (max-width: $tablet-width-max) {
     background-color: $color-white;
   }
