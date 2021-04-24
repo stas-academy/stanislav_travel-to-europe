@@ -9,24 +9,28 @@
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav wrapper">
-      <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/icon-way.svg" width="57" height="22" alt="Логотип сайта">
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs wrapper">
+      <a class="main-navigation__logo" href="#">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="img/icon-way-tablet.svg" width="44" height="17" alt="Логотип сайта">
+          <img class="main-navigation__image" src="img/icon-way.svg" width="57" height="22" alt="Логотип сайта">
+        </picture>
       </a>
-      <ul class="header__menu header__menu--closed header__menu--nojs">
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#">О путешествии</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link header__menu-link--active" href="#">Цены</a>
-        </li>
-      </ul>
-      <div class="header__contacts">
-        <a class="header__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </div>
-      <button class="header__toggle" type="button">
+      <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Переключение состояния меню</span>
       </button>
+      <ul class="main-navigation__menu">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">О путешествии</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Цены</a>
+        </li>
+      </ul>
+      <div class="main-navigation__contacts">
+        <a class="main-navigation__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
+
     </nav>
     <section class="header__preview">
       <div class="wrapper">
@@ -37,6 +41,7 @@
         </div>
       </div>
     </section>
-</header>
+  </header>
+  <script src="js/navigation.min.js"></script>
 </body>
 </html>

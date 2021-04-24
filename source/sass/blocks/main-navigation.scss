@@ -1,0 +1,239 @@
+.main-navigation {
+  min-height: 99px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    min-height: 50px;
+  }
+}
+
+.main-navigation__logo {
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+    margin-top: 9px;
+    margin-left: 5px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 1px;
+  }
+}
+
+.main-navigation--opened .main-navigation__logo {
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.main-navigation__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  width: 65%;
+  margin-left: 3px;
+  padding: 0;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+}
+
+.main-navigation--opened .main-navigation__menu {
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 528px;
+    padding-top: 84px;
+  }
+}
+
+.main-navigation__link {
+  color: $color-black-light;
+  margin-left: 40px;
+
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    color: $color-grey-dark;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    min-height: 60px;
+    background-color: $color-whine-dark;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+}
+
+.main-navigation__link::before {
+
+  @media (max-width: $tablet-width-max) {
+    content: "";
+    background-image: url("../../img/icon-arrow-toggle.svg");
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 16px;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-navigation__item {
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 30px;
+  }
+}
+
+.main-navigation--closed .main-navigation__item {
+  display: block;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.main-navigation__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+    background-color: $color-orange;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 72px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 50px;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+
+  @media (max-width: $tablet-width-max) {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 18px;
+    width: 23px;
+    height: 1px;
+    background-color: $color-whine-grey;
+    box-shadow: 0 6px 0 0 $color-whine-grey, 0 12px 0 0 $color-whine-grey;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    left: 13px;
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.main-navigation--nojs .main-navigation__item {
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::before,
+.main-navigation--opened .main-navigation__toggle::after {
+
+  @media (max-width: $tablet-width-max) {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 11px;
+    width: 28px;
+    height: 1px;
+    background-color: $color-grey;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::before {
+
+  @media (max-width: $tablet-width-max) {
+    transform: rotate(45deg);
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::after {
+
+  @media (max-width: $tablet-width-max) {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+
+  @media (max-width: $tablet-width-max) {
+    background-color: $color-white;
+  }
+}
+
+.main-navigation__contacts {
+  position: relative;
+  margin-right: 3px;
+  margin-left: 40px;
+  margin-top: 3px;
+  width: 200px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.main-navigation__contacts::before {
+  content: "";
+  background-image: url("../../img/icon-phoneblack.svg");
+  position: absolute;
+  width: 18px;
+  height: 25px;
+  left: -32px;
+  bottom: 2px;
+  background-repeat: no-repeat;
+}
+
+.main-navigation__phone {
+  color: $color-black-light;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.main-navigation__phone::before {
+  content: "";
+  position: absolute;
+  width: 187px;
+  height: 1px;
+  background-color: $color-black-light;
+  bottom: 7px;
+}
