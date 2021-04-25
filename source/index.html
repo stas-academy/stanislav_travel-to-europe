@@ -44,14 +44,17 @@
   <main>
     <section class="countries">
       <div class="wrapper">
-        <h2 class="countries__title">Места посещения</h2>
-        <p class="countries__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест </p>
+        <div class="countries__header">
+          <h2 class="countries__title">Места посещения</h2>
+          <p class="countries__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест </p>
+        </div>
         <div class="countries__wrapper">
           <div class="countries__place">
             <a class="countries__link" href="#">
               <p class="countries__text">Греция</p>
                 <picture>
-                  <img class="countries__image" src="img/desktop-greece.jpg" srcset="img/desktop-greece@2x.jpg 2x"  width="350" height="430" alt="Греция">
+                  <source media="(max-width: 1023px)" srcset="img/tablet-greece.jpg 1x, img/tablet-greece@2x.jpg 2x">
+                  <img class="countries__image" src="img/desktop-greece.jpg" srcset="img/desktop-greece@2x.jpg 2x" width="350" height="430" alt="Греция">
                 </picture>
             </a>
           </div>
@@ -59,7 +62,8 @@
             <a class="countries__link" href="#">
               <p class="countries__text">Албания</p>
                 <picture>
-                  <img class="countries__image" src="img/desktop-albania.jpg" srcset="img/desktop-albania@2x.jpg 2x"  width="350" height="430" alt="Греция">
+                  <source media="(max-width: 1023px)" srcset="img/tablet-albania.jpg 1x, img/tablet-albania@2x.jpg 2x">
+                  <img class="countries__image" src="img/desktop-albania.jpg" srcset="img/desktop-albania@2x.jpg 2x" width="350" height="430" alt="Греция">
                 </picture>
             </a>
           </div>
@@ -67,7 +71,8 @@
             <a class="countries__link" href="#">
               <p class="countries__text">Македония</p>
                 <picture>
-                  <img class="countries__image" src="img/desktop-macedonia.jpg" srcset="img/desktop-macedonia@2x.jpg 2x"  width="350" height="430" alt="Греция">
+                  <source media="(max-width: 1023px)" srcset="img/tablet-macedonia.jpg 1x, img/tablet-macedonia@2x.jpg 2x">
+                  <img class="countries__image" src="img/desktop-macedonia.jpg" srcset="img/desktop-macedonia@2x.jpg 2x" width="350" height="430" alt="Греция">
                 </picture>
             </a>
           </div>
@@ -75,7 +80,8 @@
             <a class="countries__link" href="#">
               <p class="countries__text">Черногория</p>
                 <picture>
-                  <img class="countries__image" src="img/desktop-montenegro.jpg" srcset="img/desktop-montenegro@2x.jpg 2x"  width="350" height="430" alt="Греция">
+                  <source media="(max-width: 1023px)" srcset="img/tablet-montenegro.jpg 1x, img/tablet-montenegro@2x.jpg 2x">
+                  <img class="countries__image" src="img/desktop-montenegro.jpg" srcset="img/desktop-montenegro@2x.jpg 2x" width="350" height="430" alt="Греция">
                 </picture>
             </a>
           </div>
@@ -83,9 +89,11 @@
             <a class="countries__link" href="#">
               <p class="countries__text">Хорватия</p>
                 <picture>
-                  <img class="countries__image" src="img/desktop-croatia.jpg" srcset="img/desktop-croatia@2x.jpg 2x"  width="350" height="430" alt="Греция">
+                  <source media="(max-width: 1023px)" srcset="img/tablet-croatia.jpg 1x, img/tablet-croatia@2x.jpg 2x">
+                  <img class="countries__image" src="img/desktop-croatia.jpg" srcset="img/desktop-croatia@2x.jpg 2x" width="350" height="430" alt="Греция">
                 </picture>
             </a>
+          </div>
           </div>
         </div>
       </div>
