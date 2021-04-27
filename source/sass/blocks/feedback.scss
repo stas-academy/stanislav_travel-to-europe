@@ -1,0 +1,205 @@
+.feedback {
+  position: relative;
+  min-height: 455px;
+  margin-bottom: 100px;
+  margin-top: 138px;
+  padding: 0 15px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+    margin-top: 124px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    min-height: 0;
+    margin-top: 0;
+  }
+}
+
+.feedback__image {
+  width: 844px;
+  height: 455px;
+  background-color: $color-orange;
+  background-image: url("../../img/sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-left: 12px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/sunset@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    margin-left: 0;
+    background-image: url("../../img/sunset-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/sunset-tablet@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+}
+
+.feedback__form {
+  position: absolute;
+  top: 71px;
+  right: 3px;
+  z-index: 2;
+  width: 656px;
+  height: 315px;
+  background-color: $color-white;
+  box-shadow: 0px 4px 30px $color-grey-shadow;
+  border-radius: 5px;
+  padding: 50px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 658px;
+    height: 311px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-whine-dark;
+    height: 441px;
+    padding: 30px 15px 30px 15px;
+    box-shadow: none
+  }
+}
+
+.feedback__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: $color-black-light;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback__text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  color: $color-black-light;
+}
+
+.feedback__container {
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items: center;
+    width: 288px;
+    margin-bottom: 0;
+  }
+}
+
+.feedback__container::before  {
+  content: "";
+  background-image: url("../../img/star.svg");
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: 15px;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width-max) {
+
+  }
+
+  @media (max-width: $mobile-width-max) {
+
+  }
+}
+
+.feedback__input {
+  width: 269px;
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid $color-grey-light-opacity;
+  font-size: 14px;
+  line-height: 17px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    margin-bottom: 20px;
+  }
+}
+
+.feedback__input::placeholder {
+  color: $color-black-light;
+  opacity: 1;
+}
+
+.feedback__input--phone::placeholder {
+  padding-left: 12px;
+  letter-spacing: 0.5px;
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 11px;
+  }
+}
+
+.feedback__input--email::placeholder {
+  padding-left: 3px;
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 0;
+    letter-spacing: 0.3px;
+  }
+}
+
+
+.feedback__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  min-height: 50px;
+  border: none;
+  padding: 0;
+  background-color: $color-orange;
+  color: $color-white;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: $tablet-width-max) {
+    width: 250px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    margin-left: 0;
+    transform: none;
+  }
+}
