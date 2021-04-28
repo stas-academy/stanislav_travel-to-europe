@@ -76,7 +76,6 @@
     color: $color-grey-dark;
     display: flex;
     align-items: center;
-    // margin-left: 0;
     min-height: 60px;
     background-color: $color-whine-dark;
     margin: 0 -15px;
@@ -84,6 +83,10 @@
     padding-right: 50px;
     cursor: pointer;
   }
+}
+
+.main-navigation__link:hover {
+  color: $color-orange;
 }
 
 .main-navigation__link::before {

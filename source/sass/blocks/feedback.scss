@@ -200,3 +200,8 @@
     transform: none;
   }
 }
+
+.feedback__button:hover,
+.feedback__button:focus {
+  background-color: $color-orange-hover;
+}

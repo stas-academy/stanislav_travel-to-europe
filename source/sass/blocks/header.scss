@@ -125,6 +125,11 @@
   }
 }
 
+.header__button:hover,
+.header__button:focus {
+  background-color: $color-orange-hover;
+}
+
 .header__button::before {
   content: "";
   background-image: url("../../img/icon-arrow-right.svg");

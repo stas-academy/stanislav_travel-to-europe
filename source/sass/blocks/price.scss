@@ -429,3 +429,8 @@
     letter-spacing: 2.2px;
   }
 }
+
+.price__button:hover,
+.price__button:focus {
+  background-color: $color-orange-hover;
+}
