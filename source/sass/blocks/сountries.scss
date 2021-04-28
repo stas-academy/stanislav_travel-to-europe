@@ -1,12 +1,10 @@
 .countries {
-
   @media (max-width: $mobile-width-max) {
     margin-top: 227px;
   }
 }
 
 .countries__header {
-
   @media (max-width: $tablet-width-max) {
     display: flex;
     flex-direction: column;
@@ -130,7 +128,6 @@
 }
 
 .countries__image {
-
   @media (max-width: $tablet-width-max) {
     width: 288px;
     height: 425px;

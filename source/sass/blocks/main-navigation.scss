@@ -170,10 +170,14 @@
     content: "";
     position: absolute;
     top: 26px;
-    left: 11px;
+    left: 16px;
     width: 28px;
     height: 1px;
     background-color: $color-grey;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    left: 11px;
   }
 }
 

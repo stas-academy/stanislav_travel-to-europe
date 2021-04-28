@@ -30,10 +30,6 @@
     order: 0;
   }
 
-  @media (max-width: $tablet-width-max) {
-
-  }
-
   @media (max-width: $mobile-width-max) {
     width: 100%;
   }
@@ -60,7 +56,7 @@
   }
 }
 
-.price__title::before  {
+.price__title::before {
   content: "";
   position: absolute;
   background-color: $color-orange;
@@ -71,10 +67,6 @@
 
   @media (max-width: $tablet-width-max) {
     display: none;
-  }
-
-  @media (max-width: $mobile-width-max) {
-
   }
 }
 
@@ -93,10 +85,6 @@
   @media (max-width: $tablet-width-max) {
     font-size: 16px;
     line-height: 27px;
-  }
-
-  @media (max-width: $mobile-width-max) {
-
   }
 }
 
@@ -126,10 +114,6 @@
     font-size: 18px;
     line-height: 34px;
   }
-
-  @media (max-width: $mobile-width-max) {
-
-  }
 }
 
 .price__contact-phone {
@@ -158,7 +142,7 @@
   }
 }
 
-.price__contact-phone::before  {
+.price__contact-phone::before {
   content: "";
   background-image: url("../../img/icon-phoneorange.svg");
   position: absolute;
@@ -177,7 +161,6 @@
 }
 
 .price__contact-phone::after {
-
   @media (max-width: $tablet-width-max) {
     content: "";
     position: absolute;
@@ -193,7 +176,7 @@
   display: flex;
 
   @media (max-width: 1440px) {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -204,7 +187,6 @@
 .price__container {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   position: relative;
   width: 370px;
   min-height: 672px;
@@ -217,7 +199,7 @@
     align-items: center;
     width: 288px;
     min-height: 629px;
-    border-radius: 6px 6px 0 0 ;
+    border-radius: 6px 6px 0 0;
     padding: 0;
     margin-right: 50px;
   }
@@ -229,7 +211,7 @@
   }
 }
 
-.price__container::before  {
+.price__container::before {
   content: "";
   position: absolute;
   background-color: $color-grey-light-opacity;
@@ -242,14 +224,9 @@
     width: 248px;
     top: 198px;
   }
-
-  @media (max-width: $mobile-width-max) {
-    // display: none;
-  }
 }
 
 .price__container:nth-child(2) {
-
   @media (max-width: 1440px) {
     margin-right: 0;
   }
@@ -263,17 +240,8 @@
   border: 3px solid $color-orange;
 }
 
-.price__container--active::before  {
+.price__container--active::before {
   background-color: $color-orange;
-
-
-  @media (max-width: $tablet-width-max) {
-
-  }
-
-  @media (max-width: $mobile-width-max) {
-
-  }
 }
 
 .price__header {
@@ -355,25 +323,6 @@
   }
 }
 
-// .price__include::before  {
-//   content: "";
-//   position: absolute;
-//   background-color: $color-orange;
-//   width: 310px;
-//   height: 1px;
-//   top: 114px;
-//   background-repeat: no-repeat;
-
-//   @media (max-width: $tablet-width-max) {
-
-//   }
-
-//   @media (max-width: $mobile-width-max) {
-//     // display: none;
-//   }
-// }
-
-
 .price__list {
   list-style: none;
   padding: 0;
@@ -406,7 +355,7 @@
   }
 }
 
-.price__item--daw::before  {
+.price__item--daw::before {
   content: "";
   background-image: url("../../img/daw.svg");
   position: absolute;
@@ -424,7 +373,7 @@
   }
 }
 
-.price__item--daw:nth-child(1)::before  {
+.price__item--daw:nth-child(1)::before {
   bottom: 27px;
 
   @media (max-width: $tablet-width-max) {
@@ -437,7 +386,7 @@
   }
 }
 
-.price__item--daw-economy::before  {
+.price__item--daw-economy::before {
   content: "";
   background-image: url("../../img/daw-economy.svg");
   position: absolute;
@@ -479,5 +428,4 @@
     padding-top: 6px;
     letter-spacing: 2.2px;
   }
-
 }
