@@ -74,7 +74,7 @@
   grid-template-columns: repeat(auto-fill, 350px);
   column-gap: 60px;
   justify-content: center;
-  row-gap: 97px;
+  row-gap: 101px;
   margin-top: 56px;
 
   @media (max-width: $tablet-width-max) {
@@ -94,7 +94,9 @@
 
 .countries__place {
   width: 350px;
+  height: 430px;
   position: relative;
+  background-color: $color-background-preview;
 
   @media (max-width: $tablet-width-max) {
     width: 288px;
@@ -141,7 +143,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   width: 215px;
   height: 63px;
   background-color: $color-white;

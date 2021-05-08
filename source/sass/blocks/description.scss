@@ -146,6 +146,8 @@
 }
 
 .description__image {
+  background-color: $color-background-preview;
+
   @media (max-width: $tablet-width-max) {
     width: 768px;
     height: 415px;
