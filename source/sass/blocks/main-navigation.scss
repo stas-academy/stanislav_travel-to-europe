@@ -62,8 +62,8 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    min-height: 528px;
-    padding-top: 84px;
+    min-height: 200px;
+    padding-top: 10px;
   }
 }
 
@@ -164,6 +164,19 @@
 .main-navigation--nojs .main-navigation__item {
   @media (max-width: $tablet-width-max) {
     display: block;
+    width: 100%;
+  }
+}
+
+.main-navigation--nojs .main-navigation__menu {
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+  }
+}
+
+.main-navigation--nojs .main-navigation__logo {
+  @media (max-width: $tablet-width-max) {
+    display: none;
   }
 }
 
